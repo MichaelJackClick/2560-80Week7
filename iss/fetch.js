@@ -31,7 +31,7 @@ function iss(attempts) {
     }
 
     fetch(url).then((res) => {
-        return res.json() // process response into JSON
+        return res.json() // this processes response into JSON
     }).then((issData) => {
         console.log(issData) // TODO - display data on web page
         let lat = issData.latitude
