@@ -25,7 +25,7 @@ submitButton.addEventListener('click', function() {
         alert("Please enter an answer.");
         return;
     }
-    let url = 'http://api.worldbank.org/v2/country/' + currentCountry.twoLetterCode + '?format=json';
+    let url = 'https://api.worldbank.org/v2/country/' + currentCountry.twoLetterCode + '?format=json';
 
     fetch(url)
         .then(function(response) {
