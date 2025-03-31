@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Capital City Guessing Game</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+          crossorigin="anonymous">
+
+    <script src="countries.js"></script>
+    <script async defer src="game.js"></script>
+
+</head>
+
+<body>
+<div class="content m-4 center-block">
+    <h1>Geography Quiz</h1>
+
+    <p>Test your knowledge of geography. What's the capital city of this country?</p>
+
+    <!-- Display the country name here -->
+    <h3 id="random-country-display">Country name placeholder</h3>
+
+    <div class="input-group mb-3">
+
+        <!-- The user will enter their answer in this input -->
+        <input type="text" id="user-answer-entry" class="form-control" placeholder="answer" aria-label="answer" aria-description="submit-answer">
+        <div class="input-group-append">
+
+            <!-- Clicking this button submits the user's answer for the program to verify  -->
+            <button class="btn btn-outline-secondary" type="button" id="submit-user-answer">Check Answer</button>
+        </div>
+    </div>
+
+    <!-- After the user's guess is verified, display if the user is correct, or
+     not (plus the correct answer) here -->
+    <h3 id="game-result">Replace with result</h3>
+
+    <button class="btn btn-outline-secondary" type="button" id="play-again">Play Again</button>
+
+</div>
+</body>
+
+</html>
